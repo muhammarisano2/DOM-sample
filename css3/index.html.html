@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 2px solid green;
+            margin: 10px auto;
+            background-image: url('./horse.jpg');
+            background-position-y: -10px;
+            background-size: cover;
+            transition: 1s;
+        }
+        .container:hover{
+            filter: sepia(120%);
+            animation: identifier 2s;
+        }
+        .kotak1{
+            width: 100px;
+            height: 100px;
+            background-image: radial-gradient(circle, red ,blue);
+            transition: 1s;
+        }
+        .container:hover .kotak1{
+            /* transform: scale(2, 2) rotate(360deg); */
+            transform: translate(50px, 100px);
+
+            border-radius: 50%;   
+        }
+
+        @keyframes identifier {
+            0%{
+                width: 200px;
+            }
+            50%{
+                width: 500px;
+                height: 200px;
+            }
+            100%{
+                width: 500px;
+            }
+        }
+
+        /* .kotak2{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            margin-left: 50px;
+            border-top-left-radius: 5px;
+            border-radius: 5px 10px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="kotak1">
+            <div class="kotak2">
+
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
